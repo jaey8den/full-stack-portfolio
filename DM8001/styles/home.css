@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.intro{
+    position: relative;
+}
+
+.sky{
+    height: auto;
+    width: 100%;
+}
+
+.bar{
+    position: absolute;
+    bottom: -10%;
+    width: 100%;
+    height: 69px;
+    background-color: rgb(224, 223, 223);
+}
+
+.name{
+    margin-left: 3%;
+}
+
+.name li{
+    float: left;
+    list-style-type: none;
+}
+
+.name li a{
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navtabs{
+    margin-right: 3%;
+}
+
+.navtabs li{
+    float: right;
+    list-style-type: none;
+}
+
+.navtabs li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navtabs li a:hover{
+    background-color: rgb(101, 164, 216);
+}
+
+.dropdown{
+    display: none;
+    background-color:rgb(238, 238, 238);
+}
+
+.dropdown a{
+    font-size: 60%;
+}
+
+#active{
+    background-color: #c987d6;
+}
+
+.latest{
+    width: 60%;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.latest h2{
+    margin: 40px;
+    text-decoration: underline;
+}
+
+.pages{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pages p{
+    text-align: right;
+    margin: 40px;
+}
+
+a:link{
+    text-decoration: none;
+    color: rgb(55, 117, 168);
+}
+
+a:visited{
+    color: #873f96;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.preview{
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.preview div{
+    margin: 40px;
+    padding: 20px;
+    height: auto;
+    background-color:white;
+    border: 10px double rgb(101, 164, 216);
+    box-shadow: 5px 10px #c987d6;
+    word-wrap: break-word;
+}
+
+.preview div #photo{
+    width: 100%;
+    height: auto;
+}
+
+
+#publish-3, #publish-2, #publish-1{
+    font-style: italic;
+}
+
+.signup{
+    width:80%;
+    height: auto;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 25px;
+    background-color:rgb(101, 164, 216);
+}
+
+.signup div{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+input{
+    border: 1px black;
+    border-bottom-style: solid;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    background-color: transparent;
+}
+
+#email{
+    font-size:90%;
+}
+
+#email:focus{
+    outline: none;
+}
+
+#submit{
+    font-size: 80%;
+    background-color: #c987d6;
+    border-radius: 15px;
+    border: 0px;
+    padding: 8px;
+    width: 88px;
+    height: auto;
+}
+
+#submit:hover{
+    background-color: #af76bb;
+}
+
+body{
+    color: #263238;
+    font-family: pt-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+footer{
+    margin-left: 3%;
+    margin-right: 3%;
+    border-top: 1px solid;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 944px){
+    .name, .navtabs, .navtabs li div .dropdown a{
+        font-size: 75%;
+        size: 75%;
+    }
+
+    .bar{
+        height: 58px;
+    }
+
+    .preview{
+        margin-top: 60px;
+        width: 85%;
+    }
+    
+    .preview div p{
+        font-size: 75%;
+    }
+
+    .pages, .latest{
+        font-size: 80%;
+        width: 85%;
+    }
+
+    .latest{
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 736px){
+    /* For mobile phones: */
+    .name, .navtabs, .navtabs li div .dropdown a{
+        font-size: 50%;
+        size: 50%;
+    }
+
+    .name{
+        margin-left: 0%;
+    }
+
+    .navtabs{
+        margin-right: 0%;
+    }
+
+    .name li a, .navtabs li a{
+        padding: 7px 8px;
+    }
+
+    .bar{
+        height: 34px;
+    }
+
+    .preview{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .pages, .latest{
+        font-size: 70%;
+        width: 100%;
+    }
+
+    .latest{
+        margin-top: 40px;
+    }
+}

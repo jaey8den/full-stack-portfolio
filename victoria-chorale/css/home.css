@@ -1,0 +1,303 @@
+/* 
+
+Order of Properties
+
+    Background
+    Font
+    Dimensions
+    Class/ID specific
+
+*/
+
+/* Landing */
+
+#landing {
+    /* height: 0;
+    padding: 0;
+    padding-bottom: 57%;
+    background-image: url('../img/landing.jpg');
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;*/
+}
+
+#landing img {
+    width: 100%;
+}
+
+#landing_box {
+    color: white;
+
+    top: 40%;
+}
+
+/* About */
+
+#about {
+    height: 700px;
+}
+
+#about_box img {
+    width: 800px;
+    height: 536px;
+    margin-left: auto;
+}
+
+#about_box > p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+
+    border-bottom: 2px dotted rgb(135, 135, 135);
+}
+
+#about_brief {
+    width: 30%;
+}
+
+#about_brief button {
+    background-color: #9b122e;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+
+    width: 150px;
+    height: 66px;
+
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#about_brief button:hover {
+    background-color: #ddc281;
+    color: black;
+
+    transition: 0.3s;
+}
+
+/* Notables */
+
+#notables {
+    height: 1000px;
+}
+
+#notables_box {
+
+}
+
+.notable_slides {
+    display: none;
+    box-shadow: 2px 4px 5px rgb(120, 120, 120);
+}
+
+.fade {
+    animation-name: fadeIn;
+    animation-duration: 1.2s;
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0.3}
+    to {opacity: 1}
+}
+
+.notable_slides h2 {
+    color: #f2f2f2;
+    font-size: 36px;
+
+    top: 0;
+    left: 20;
+    padding: 8px 12px;
+    
+    position: absolute;
+}
+
+.notable_slides p {
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 30px;
+
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+
+    position: absolute; 
+}
+
+#prev, #next {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+
+    position: absolute;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+
+#prev:hover, #next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+#next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Contact */
+
+#contact {
+    background-image: url("../img/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 1200px;
+}
+
+#contact img {
+    width: 100%;
+}
+
+#contact_box {
+   justify-content: left;
+}
+
+#contact_table tr {
+    height: 30px;
+}
+
+#contact_table input {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+
+    border: none;
+}
+
+#contact_table input:focus {
+    outline: none;
+}
+
+#contact_table textarea {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+
+    width: 100%;
+    height: 100px;
+
+    resize: none;
+}
+
+#contact_table textarea:focus {
+    outline: none;
+}
+
+#contact_submit {
+    background-color: #EAE3D3;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 24px;
+
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact_submit:hover {
+    background-color: #9b122e;
+    color: white;
+
+    transition: 0.3s;
+}
+
+/* Footer */
+
+#footer {
+    background: rgb(221,194,129);
+    background: linear-gradient(0deg, rgba(221,194,129,1) 0%, rgba(234,227,211,1) 100%);
+
+    height: 400px;
+}
+
+#socials, #footer_nav, #footer_contact {
+    width: 33%;
+    height: 350px;
+
+    padding: 20px;
+}
+
+#socials > p, #footer_nav > p, #footer_contact > p {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    padding: 0 0 10px 0;
+
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+#socials i {
+    margin-right: 20px;
+}
+
+#footer_list {
+    font-family: 'Merriweather', sans-serif;
+    text-transform: uppercase;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+#footer_list li {
+    padding-bottom: 30px;
+}
+
+#footer_list a:link {
+    color: black;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+#footer_list a:visited {
+    color: inherit;
+}
+
+#footer_list a:hover {
+    color: #9b122e;
+
+    transition: 0.2s;
+}
+
+#footer_contact > span {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+
+    padding-bottom: 30px;
+}
+
+#footer_contact a:link {
+    color: black;
+
+    transition: 0.2s;
+}
+
+#footer_contact a:hover {
+    color: #9b122e;
+
+    transition: 0.2s;
+}

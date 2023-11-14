@@ -1,0 +1,100 @@
+#cart {
+    justify-content: center;
+}
+
+#empty_cart {
+    font-family: 'Exo';
+    font-size: 16px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#empty_cart:hover {
+    background-color: rgb(185, 2, 2);
+    transition: 0.2s;
+}
+
+.tall {
+    width: 266px;
+    height: 300px;
+}
+
+.wide {
+    width: 350px;
+    height: 200px;
+}
+
+#cart table {
+    width: 100%;
+}
+
+.cart_image {
+    width: 40%;
+}
+
+.cart_name {
+    width: 20%;
+}
+
+.cart_qty {
+    width: 10%;
+}
+
+.cart_price {
+    width: 15%;
+}
+
+.cart_sub {
+    width: 15%;
+}
+
+#checkout {
+    justify-content: center;
+}
+
+#checkout_box {
+    align-items: center;
+}
+
+#checkout_table {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 1px 3px;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+#checkout_table input {
+    border: none;
+    border-bottom: solid 1px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+#checkout_table input::placeholder {
+    opacity: 0.3;
+}
+
+#checkout_table input:focus {
+    outline: none;
+}
+
+#Submit {
+    background-color: yellow;
+    font-size: 16px;
+    border-style: none;
+    border-radius: 25px;
+    width: 120px;
+    height: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#Submit:hover {
+    background: rgb(196, 196, 1);
+    transition: 0.3s;
+}

@@ -1,0 +1,103 @@
+#write_us {
+    background-color: rgb(255, 230, 0);
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#write_us div {
+    width: 600px;
+    justify-content: center;
+}
+
+#write_us a:link {
+    color: red;
+    transition: 0.2s;
+}
+
+#write_us a:visited {
+    color: red;
+}
+
+#write_us a:hover {
+    color: blue;
+    transition: 0.2s;
+}
+
+#contact_form {
+    background-color: white;
+    height: 500px;
+    justify-content: center;
+}
+
+#contact_form div {
+    justify-content: center;
+}
+
+#contact_form form {
+    align-items: center;
+}
+
+#contact_form table {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 1px 3px;
+    padding: 20px;
+    margin-top: -80px;
+}
+
+#contact_form table td {
+    padding: 5px;
+}
+
+#contact_form form table input {
+    border: none;
+    border-bottom: solid 1px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#contact_form form table input::placeholder {
+    opacity: 0.3;
+}
+
+#contact_form form select {
+    border: none;
+    border-bottom: solid 1px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+#contact_form form table input:focus {
+    outline: none;
+}
+
+#contact_form form textarea {
+    font-family: 'Exo', sans-serif;
+    width: 100%;
+    resize: none;
+    border: solid 1px;
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+#contact_form form textarea:focus {
+   outline: none;
+}
+
+#Submit {
+    background-color: yellow;
+    font-size: 16px;
+    border-style: none;
+    border-radius: 25px;
+    width: 150px;
+    height: 60px;
+    margin-top: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#Submit:hover {
+    background: rgb(196, 196, 1);
+    transition: 0.3s;
+}

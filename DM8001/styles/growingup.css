@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bar{
+    top: 0%;
+    width: 100%;
+    height: 69px;
+    background-color: rgb(224, 223, 223);
+}
+
+.name{
+    margin-left: 3%;
+}
+
+.name li{
+    float: left;
+    list-style-type: none;
+}
+
+.name li a{
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navtabs{
+    margin-right: 3%;
+}
+
+.navtabs li{
+    float: right;
+    list-style-type: none;
+}
+
+.navtabs li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navtabs li a:hover{
+    background-color: rgb(101, 164, 216);
+}
+
+.dropdown{
+    display: none;
+    background-color:rgb(238, 238, 238);
+    position:absolute;
+    z-index: 1;
+}
+
+.dropdown a{
+    font-size: 60%;
+}
+
+.active{
+    background-color: #c987d6;
+}
+
+.photo-and-date{
+    border: 5px double rgb(101, 164, 216);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: relative;
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo{
+    width:100%;
+    height: auto;
+}
+
+.credits{
+    position: absolute;
+    left: 10px;
+    bottom: -12%;
+}
+
+.writeup{
+    width: 45%;
+    height: auto;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.publish{
+    font-style: italic;
+}
+
+body{
+    color: #263238;
+    font-family: pt-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+footer{
+    margin-top: 30px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-top: 1px solid;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 944px){
+    .name, .navtabs, .navtabs li div .dropdown a{
+        font-size: 75%;
+        size: 75%;
+    }
+
+    .bar{
+        height: 58px;
+    }
+
+    .photo-and-date{
+        width: 80%;
+    }
+
+    .credits{
+        font-size: 80%;
+    }
+
+    .writeup{
+        font-size: 80%;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 736px){
+    /* For mobile phones: */
+    .name, .navtabs, .navtabs li div .dropdown a{
+        font-size: 50%;
+        size: 50%;
+    }
+
+    .name{
+        margin-left: 0%;
+    }
+
+    .navtabs{
+        margin-right: 0%;
+    }
+
+    .name li a, .navtabs li a{
+        padding: 7px 8px;
+    }
+
+    .bar{
+        height: 34px;
+    }
+
+    .photo-and-date{
+        width: 90%;
+    }
+
+    .credits{
+        bottom: -17%
+    }
+
+    .writeup{
+        width:85%;
+    }
+}

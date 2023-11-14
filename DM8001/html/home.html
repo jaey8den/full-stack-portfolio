@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/load.js"></script>
+        <script src="../js/readmore.js"></script>
+        <script src="../js/dropdown.js"></script>
+        <script src="../js/enter.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../styles/home.css" rel="stylesheet" type="text/css"/>
+        <title>Average Copy</title>
+    </head>
+    <body>
+        <section class="intro">
+            <div>
+                <img class="sky" src="../photos/sky-edited.png"/>
+            </div>
+            <div class="bar">
+                <ul class="name">
+                    <li><a href="home.html">limjiale's personal blog</a></li>
+                </ul>
+                <ul class="navtabs">
+                    <li id="active"><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li id="drop"><a>&nbsp &nbsp blogs &nbsp &nbsp</a>
+                        <div class="dropdown">
+                            <a href="articles/food/pepcorn.html">food</a>
+                            <a href="articles/showerthoughts/growingup.html">shower thoughts</a>
+                            <a href="articles/notetoself/procrastinate.html">note to self</a>
+                        </div>
+                    </li>
+                    <li><a href="contactme.html">contact me</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <div class="latest">
+            <h2>Latest Posts</h2>
+        </div>
+
+        <section class="preview">
+            <div>
+                <img id="photo" src="../photos/shower.jpg">
+                <p id="title-3"></p>
+                <p id="publish-3"></p>
+                <p id="content-3"></p>
+            </div>
+            <div>
+                <img id="photo" src="../photos/pepcorn.jpg">
+                <p id="title-2"></p>
+                <p id="publish-2"></p>
+                <p id="content-2"></p>
+            </div>
+            <div>
+                <img id="photo" src="../photos/procrastinate.png">
+                <p id="title-1"></p>
+                <p id="publish-1"></p>
+                <p id="content-1"></p>
+            </div>
+        </section>
+
+        <div class="pages">
+            <p><a href="blogs.html">See all ></a></p>
+        </div>
+
+        <section class="signup">
+            <div>
+                <h3>Sign up for updates on new posts!</h3>
+                <input type="text" id="email" placeholder="Email Address">
+                <button id="submit" onclick="javascript:alert('Check your email for confirmation!')">Submit</button>
+            </div>
+        </section>
+
+        <footer>
+            <h5>&copy Average Copy 2021</h5>
+        </footer>
+    </body>
+</html>
